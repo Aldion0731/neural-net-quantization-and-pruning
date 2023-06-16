@@ -12,5 +12,11 @@ class ModelFiles(str, Enum):
     PRUNED_QUANTIZED_TFLITE = "pruned_quantized.tflite"
 
 
-def calculate_file_path(file: ModelFiles, root_path: Path = Path("models_dir")) -> Path:
+class ProjectDirs(str, Enum):
+    MODELS_DIR = "models_dir"
+
+
+def calculate_file_path(
+    file: ModelFiles, root_path: Path = Path(f"{ProjectDirs.MODELS_DIR}")
+) -> Path:
     return root_path / f"{file}"
