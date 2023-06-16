@@ -7,7 +7,6 @@ name = "pypi"
 tensorflow = "==2.12.0"
 tensorflow-model-optimization = "==0.7.5"
 pandas = "==2.0.2"
-matplotlib = "==3.7.1"
 
 [dev-packages]
 ipykernel = "==6.23.2"
